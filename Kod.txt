@@ -23,21 +23,21 @@ void loop(){
    Serial.println(okunan); // okunan değeri serial monitöre yazdır
 
 
-   int k1=okunan%2; /*1.bit LSB */ Serial.print("LSB= "); Serial.println(k1);
-   int k2=(okunan/2)%2; /*2.bit */ Serial.print("2.bit= "); Serial.println(k2);
-   int k3=(okunan/4)%2; /*3.bit */ Serial.print("3.bit= "); Serial.println(k3);
-   int k4=(okunan/8)%2; /*4.bit */ Serial.print("4.bit= "); Serial.println(k4);
-   int k5=(okunan/16)%2; /*4.bit */  Serial.print("5.bit= "); Serial.println(k5);
-   int k6=(okunan/32)%2; /*5.bit */  Serial.print("6.bit= "); Serial.println(k6);
-   int k7=(okunan/64)%2; /*6.bit */  Serial.print("7.bit= "); Serial.println(k7);
-   int k8=(okunan/128)%2; /*7.bit */ Serial.print("MSB= ");   Serial.println(k8);
+   int k1=okunan%2; /*1.bit LSB */   Serial.print("LSB= "); Serial.println(k1);   /*1.bit LSB değerini ekrana yazdırdık */
+   int k2=(okunan/2)%2; /*2.bit */   Serial.print("2.bit= "); Serial.println(k2); /*2.bit değerini ekrana yazdırdık */
+   int k3=(okunan/4)%2; /*3.bit */   Serial.print("3.bit= "); Serial.println(k3); /*3.bit değerini ekrana yazdırdık */
+   int k4=(okunan/8)%2; /*4.bit */   Serial.print("4.bit= "); Serial.println(k4); /*4.bit değerini ekrana yazdırdık */
+   int k5=(okunan/16)%2; /*4.bit */  Serial.print("5.bit= "); Serial.println(k5); /*5.bit değerini ekrana yazdırdık */
+   int k6=(okunan/32)%2; /*5.bit */  Serial.print("6.bit= "); Serial.println(k6); /*6.bit değerini ekrana yazdırdık */
+   int k7=(okunan/64)%2; /*6.bit */  Serial.print("7.bit= "); Serial.println(k7); /*7.bit değerini ekrana yazdırdık */
+   int k8=(okunan/128)%2; /*7.bit */ Serial.print("MSB= ");   Serial.println(k8); /*8.bit değerini ekrana yazdırdık */
 
-   if(k1==1)digitalWrite(5,1); else digitalWrite(5,0);
-   if(k2==1)digitalWrite(6,1); else digitalWrite(6,0);
-   if(k3==1)digitalWrite(7,1); else digitalWrite(7,0);
-   if(k4==1)digitalWrite(8,1); else digitalWrite(8,0);
-   if(k5==1)digitalWrite(9,1); else digitalWrite(9,0);
-   if(k6==1)digitalWrite(10,1); else digitalWrite(10,0);
-   if(k7==1)digitalWrite(11,1); else digitalWrite(11,0);
-   if(k8==1)digitalWrite(12,1); else digitalWrite(12,0);
+   if(k1==1)digitalWrite(5,1);  else digitalWrite(5,0);  /*1. bit değeri 1 ise 5.ledi yak değilse söndür */
+   if(k2==1)digitalWrite(6,1);  else digitalWrite(6,0);  /*2. bit değeri 1 ise 6.ledi yak değilse söndür */
+   if(k3==1)digitalWrite(7,1);  else digitalWrite(7,0);  /*3. bit değeri 1 ise 7.ledi yak değilse söndür */
+   if(k4==1)digitalWrite(8,1);  else digitalWrite(8,0);  /*4. bit değeri 1 ise 8.ledi yak değilse söndür */
+   if(k5==1)digitalWrite(9,1);  else digitalWrite(9,0);  /*5. bit değeri 1 ise 9.ledi yak değilse söndür */
+   if(k6==1)digitalWrite(10,1); else digitalWrite(10,0); /*6. bit değeri 1 ise 10.ledi yak değilse söndür */
+   if(k7==1)digitalWrite(11,1); else digitalWrite(11,0); /*7. bit değeri 1 ise 11.ledi yak değilse söndür */
+   if(k8==1)digitalWrite(12,1); else digitalWrite(12,0); /*8. bit değeri 1 ise 12.ledi yak değilse söndür */
 }
